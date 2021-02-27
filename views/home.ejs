@@ -1,0 +1,30 @@
+<%- include('partials/header.ejs') %>
+<link rel='stylesheet' href='/css/home.css'>
+<div class='heading'><span style='color: #ab191a;'>Nearby</span> Restaurants</div>
+    <section class="allRestaurants">
+        <div class="container">
+          <div class="row">
+            <% for (let el of rest){ %>
+              <div class="col-lg-4 col-6">
+                  <div class="card-main" onclick='location.href="/restaurants/<%= el._id%>"'>
+                      <div class="card">
+                          <div class="card-img"><img src=<%= el.image%>></div>
+                          <div class="card-body">
+                              <h3 class="title"><%=el.name%></h3>
+                              <p class="description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <%}%>
+
+             
+             
+              
+          </div>
+        </div>
+    </section>
+
+
+
+<%- include('partials/footer.ejs') %>

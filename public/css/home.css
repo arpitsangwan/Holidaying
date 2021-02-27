@@ -1,0 +1,55 @@
+.heading {
+  font-weight:500;
+  font-size:40px;
+  text-align:center;
+}
+.allRestaurants {
+    padding: 50px 0px;
+  }
+ 
+  .card-main {
+    padding-bottom: 50px;
+  }
+  .card-main .card:hover , .card-main .card.active{
+    box-shadow: 0px 2px 24px 0px rgba(153, 153, 153, 0.616);
+    cursor: pointer;
+    transform: translateY(-5px);
+  }
+  .card-main .card {
+    border: 0px;
+    border-radius: 0;
+    padding: 20px;
+    transition: all 0.2s ease-in-out;
+  }
+  .card-main .card:hover .card-body .title{
+    color: #000;
+  }
+  .card-main .card .card-img {
+    width: 100%;
+    height: 200px;
+    margin: 0px auto 20px;
+   
+  }
+  .card-main .card .card-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20%;
+    object-fit: cover;
+  }
+  .card-main .card .card-body .title {
+    color: #ab191a;
+    font-size: 22px;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 15px;
+  }
+  .card-main .card .card-body .description {
+    font-size: 14px;
+    color: #000000;
+    margin-bottom: 0px;
+    line-height: 1.5;
+  }
+  .card-main .card .card-body {
+    padding: 0px;
+  }
+  

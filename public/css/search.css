@@ -1,0 +1,28 @@
+
+.searchResults{
+    max-height:50vh;
+    z-index: 1;
+    background-color:white;
+    position:absolute;
+    top:35px;
+    overflow:auto;
+    box-sizing:border-box;
+}
+
+.searchResults .card{
+    border:0px;
+    cursor:pointer;
+    margin-top:10px;
+    box-sizing: border-box;
+}
+.searchResults .card img{
+    width:100%;
+    height:auto;
+    border-radius: 10%;
+    margin:0px 5px;
+    box-sizing: border-box;
+
+}
+
+
+
